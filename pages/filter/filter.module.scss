@@ -1,0 +1,48 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+
+  & > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    width: 40%;
+    background: #fff;
+    height: 3.125rem;
+    box-shadow: 0 0.0625rem 1.25rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05);
+    border-radius: 0.3125rem;
+    padding: 0 1.875rem;
+
+    input {
+      border: none;
+      height: 50%;
+      width: 80%;
+      padding: 0 0.625rem;
+      font-size: 1rem;
+      color: hsl(200, 15%, 8%);
+      font-family: "Nunito Sans", sans-serif;
+
+      &::placeholder {
+        font-size: 1rem;
+        color: hsl(0, 0%, 52%);
+      }
+    }
+  }
+
+  select {
+    border-color: #fff;
+    font-size: 0.875rem;
+    box-shadow: 0 0.0625rem 1.25rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05);
+    width: 10.625rem;
+    height: 3.125rem;
+    border-radius: 0.3125rem;
+    padding: 0 0.625rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    color: hsl(200, 15%, 8%);
+  }
+}
