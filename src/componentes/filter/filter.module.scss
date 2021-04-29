@@ -4,7 +4,11 @@
   align-items: center;
   max-width: 75rem;
   margin: 0 auto;
-  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+
+  span {
+    height: 18px;
+  }
 
   & > div:first-child {
     display: flex;
@@ -13,7 +17,8 @@
     width: 40%;
     background: #fff;
     height: 3.125rem;
-    box-shadow: 0 0.0625rem 1.25rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.0625rem 1.25rem rgba(0, 0, 0, 0.05),
+      0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05);
     border-radius: 0.3125rem;
     padding: 0 1.875rem;
 
@@ -36,7 +41,8 @@
   select {
     border-color: #fff;
     font-size: 0.875rem;
-    box-shadow: 0 0.0625rem 1.25rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.0625rem 1.25rem rgba(0, 0, 0, 0.05),
+      0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05);
     width: 10.625rem;
     height: 3.125rem;
     border-radius: 0.3125rem;
@@ -44,5 +50,6 @@
     font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
     color: hsl(200, 15%, 8%);
+    background: #fff;
   }
 }

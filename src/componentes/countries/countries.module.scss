@@ -1,8 +1,8 @@
 .countriesContainer {
+  min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 40px;
-
 
   ul {
     display: grid;
@@ -13,7 +13,8 @@
       cursor: pointer;
       border-radius: 5px;
       height: 300px;
-      box-shadow: 0 0.0625rem 1.25rem rgba(0, 0, 0, 0.08), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.08);
+      box-shadow: 0 0.0625rem 1.25rem rgba(0, 0, 0, 0.08),
+        0 0.0625rem 0.125rem rgba(0, 0, 0, 0.08);
       transition: transform 0.7s;
 
       &:hover {
@@ -22,9 +23,10 @@
 
       a {
         color: hsl(200, 15%, 8%);
-        box-shadow: 0 0.0625rem 1.25rem rgba(0, 0, 0, 0.1), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.08);
+        box-shadow: 0 0.0625rem 1.25rem rgba(0, 0, 0, 0.1),
+          0 0.0625rem 0.125rem rgba(0, 0, 0, 0.08);
       }
-      
+
       .flag {
         border-radius: 5px 5px 0 0;
       }
@@ -38,15 +40,14 @@
         font-size: 18px;
         margin-bottom: 10px;
       }
-  
+
       p {
         font-weight: 600;
-  
+
         span {
           font-weight: 300;
         }
       }
-
     }
   }
 }

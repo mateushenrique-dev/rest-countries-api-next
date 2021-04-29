@@ -1,13 +1,18 @@
 import Filter from '../componentes/filter'
 import Countries from '../componentes/countries'
 import { GetStaticProps } from 'next'
+import React from 'react'
+
+  
+export const bodyRef = React.createRef()
 
 export default function Home(props) {
+
   return (
-    <>
+    <section ref={bodyRef}>
       <Filter />
       <Countries data={props.data}/>
-    </>
+    </section>
   )
 }
 

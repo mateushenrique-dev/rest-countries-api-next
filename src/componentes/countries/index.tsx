@@ -2,19 +2,31 @@ import styles from './countries.module.scss'
 import Image from 'next/image'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
+import { useFilterContext } from '../../contexts/contexts'
 
 function Countries(props) {
 
   const countries = props.data
+  const { filterRegion } = useFilterContext()  
+
+  let countriesFiltered = countries.filter((country) => {
+
+    const nameOfCountryUserSide = filterRegion.toLowerCase().replace(/[^a-zA-Zs]/g, "")
+    const nameOfCountryApiSide = country.name.toLowerCase().replace(/[^a-zA-Zs]/g, "")
+    if(country.region === "") {
+      country.region = " "
+    }
+    return (country.region === filterRegion) || ((nameOfCountryApiSide.includes(nameOfCountryUserSide)) && (filterRegion !== ""))
+  })
 
   return (
     <main className={styles.countriesContainer}>
       <ul>
         {
-          countries.map((country) => {
+          (countriesFiltered.length ? countriesFiltered : countries).map((country) => {
             return (
-              <li key={country.code}>
-                <Link href={`countries/${country.alpha2Code}`}>
+              <li key={country.alpha2Code}>
+                <Link href={`/countries/${country.alpha2Code}`}>
                   <a>
                     <div>
                       <Image
