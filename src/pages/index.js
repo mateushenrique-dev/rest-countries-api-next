@@ -17,7 +17,7 @@ export default function Home(props) {
 }
 
 
-export const getStaticProps:GetStaticProps = async () => {
+export const getStaticProps = async () => {
   const response = await fetch('https://restcountries.eu/rest/v2/all')
   const data = await response.json()
   return {

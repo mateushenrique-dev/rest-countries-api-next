@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/componentes/countries/index.js"  ],
+, "src/componentes/countries/index.js", "src/pages/index.js", "src/pages/_document.js", "src/pages/_app.js", "src/pages/countries/[country].js", "src/contexts/contexts.js", "src/componentes/header/index.js", "src/componentes/filter/index.js"  ],
   "exclude": [
     "node_modules"
   ]
