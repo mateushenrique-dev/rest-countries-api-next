@@ -3,18 +3,16 @@ import { FaRegMoon } from 'react-icons/fa'
 import { bodyRef } from '../../pages/index'
 import styles from './header.module.scss'
 
-function Header(props) {
+function Header() {
 
   const headerRef = React.createRef<HTMLElement>()
 
   function handleToggleMode() {
-    console.log(bodyRef.current)
-    bodyRef.current.classList.toggle('dark')
-    headerRef.current.classList.toggle('dark')
+    document.body.classList.toggle('dark')
   }
 
   return (
-    <header className={styles.header} ref={headerRef}>
+    <header className={styles.header}>
       <div>
         <h1>Where in the world</h1>
         <div className={styles.toggleMode} onClick={handleToggleMode}>

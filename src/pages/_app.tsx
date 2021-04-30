@@ -6,9 +6,6 @@ import '../styles/dark.scss'
 import React from 'react'
 
 function MyApp({ Component, pageProps }) {
-
-  const mainRef = React.createRef()
-
   return (
     <FilterContext>
       <Header />

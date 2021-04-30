@@ -1,6 +1,24 @@
 .dark {
   background: hsl(207, 26%, 17%);
 
+  p,
+  span,
+  h1,
+  h2,
+  h3,
+  button {
+    color: hsl(0, 0%, 100%);
+  }
+
+  header {
+    background: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+
+    h1 {
+      color: hsl(0, 0%, 100%);
+    }
+  }
+
   .searchField {
     background: hsl(209, 23%, 22%) !important;
     color: hsl(0, 0%, 100%) !important;
@@ -22,23 +40,7 @@
   }
 
   li {
-    background: hsl(209, 23%, 22%);
-
-    p,
-    span,
-    h1,
-    h2,
-    h3 {
-      color: hsl(0, 0%, 100%);
-    }
-  }
-}
-
-header.dark {
-  background: hsl(209, 23%, 22%);
-  color: hsl(0, 0%, 100%);
-
-  h1 {
     color: hsl(0, 0%, 100%);
+    background: hsl(209, 23%, 22%);
   }
 }
