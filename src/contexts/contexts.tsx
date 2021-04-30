@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
-const FilterContextData = React.createContext({})
+type contextData = {
+    filterRegion: string
+    setFilterRegion: Function
+}
+
+const FilterContextData = React.createContext({} as contextData)
 
 export function FilterContext(props) {
 

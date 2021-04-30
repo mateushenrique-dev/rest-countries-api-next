@@ -5,7 +5,7 @@ import styles from './header.module.scss'
 
 function Header(props) {
 
-  const headerRef = React.createRef()
+  const headerRef = React.createRef<HTMLElement>()
 
   function handleToggleMode() {
     console.log(bodyRef.current)

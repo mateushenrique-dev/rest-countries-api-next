@@ -3,6 +3,11 @@ import { useFilterContext } from '../../contexts/contexts'
 import styles from './filter.module.scss';
 
 function Filter() {
+
+  const teste = useFilterContext()
+
+  console.log(teste)
+  
   const {filterRegion, setFilterRegion} = useFilterContext()
 
   function filter(e) {

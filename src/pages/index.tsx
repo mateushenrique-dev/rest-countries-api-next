@@ -4,7 +4,7 @@ import { GetStaticProps } from 'next'
 import React from 'react'
 
   
-export const bodyRef = React.createRef()
+export const bodyRef = React.createRef<HTMLElement>()
 
 export default function Home(props) {
 
