@@ -69,7 +69,13 @@ function Country(props) {
           <h3>Border Countries: </h3>
           <ul>
             {country.borders.map((border) => {
-              return <li>{border}</li>
+              return (
+                <Link href={`/countries/${border}`}>
+                  <a>
+                    <li>{border}</li>
+                  </a>
+                </Link>
+              )
             })}
           </ul>
         </div>
